@@ -1,0 +1,154 @@
+
+    body{
+        min-height: 100vh;
+        display: flex;
+
+    }
+
+    #headerBox{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        justify-content: flex-start;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 75vw;
+        margin: 4%;
+        margin-bottom: 2%;
+
+    }
+
+    #startReview{
+        font-family: 'Helvetica', 'sans=serif';
+        font-size: 1.25em;
+        background-color: #606B9B;
+        color: white;
+        flex: 0 1 auto;
+        width: 180px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    #logo{
+        margin-bottom: 3%;
+        flex: 1 1 auto;
+        font-family: 'Raleway Black', sans-serif;
+        font-size: 6vw;
+        color: #606B9B;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    div.cards{
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.textCard{
+
+
+      flex: 1;
+      margin: 20px;
+      margin-left: 5vw;
+      height: 55vh;
+      width: 40vw;
+      border-style: solid;
+      border: 1ch;
+      border-width: 5px;
+      border-color: black;
+
+    }
+
+
+    textarea.textAreas{
+
+      display: inline-block;
+      margin-left: 9vw;
+      border-style: solid;
+      border-width: 0.5mm;
+      border-color: gray;
+      width: 30vw;
+      height: 25vh;
+      text-align: center;
+      vertical-align: text-bottom;
+      font-family: 'Helvetica';
+      font-size: 1.5em;
+      padding-top: 200px;
+    }
+
+
+    #savebutton{
+        color: white;
+        background-color: #70C7A9;
+        font-family: 'Helvetica';
+        font-size: 1.25em;
+        width: 110px;
+        height: 40px;
+        border-radius: 15px;
+        margin-left: 85%;
+    }
+
+    div.footer{
+        background-color: #606B9B;
+        color: white;
+        font-family: 'Helvetica';
+        font-size: 1.25em;
+        text-align: center;
+        width: 100vw;
+        margin-top: 6%;
+        padding-top: 14px;
+        min-height: 38px;
+        position: fixed;
+        bottom: 0;
+    }
+
+
+
+
+@media (max-width: 1000px) {
+
+
+    div.cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.textCard{
+
+
+      flex: 1;
+      padding: 0px;
+      margin-bottom: : 10px;
+
+      height: 15vh;
+      width: 80vw;
+      border-style: solid;
+      border: 1ch;
+      border-width: 5px;
+      border-color: black;
+
+    }
+
+
+    textarea.textAreas{
+
+
+      padding: 0px;
+      display: inline-block;
+      margin-left: 9vw;
+      border-style: solid;
+      border-width: 0.5mm;
+      border-color: gray;
+      height: 15vh;
+      width: 80vw;
+      text-align: center;
+      vertical-align: text-bottom;
+      font-family: 'Helvetica';
+      font-size: 1.5em;
+      padding-top: 150px;
+    }
+
+
+
+}

@@ -1,0 +1,80 @@
+    
+    body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #headDiv{
+    	flex: 1;
+    	background-image: linear-gradient(to bottom right, #606B9B, #B191D4);
+    	box-shadow: 30px 10px 5px lightgrey;
+    }
+
+    #head{
+    	margin-left: 4vw; 
+    	margin-top: 30%;
+    	margin-right: 4vw;
+    	font-family: 'Raleway Black', 'sans-serif';
+    	font-size: 6em;
+    	color: white;
+    	font-weight: bold;
+    }
+
+    #subhead{
+    	font-family:  'Open Sans', sans-serif;
+    	font-size: 2.5em;
+    	color: lightblue;
+    	margin-left: 4vw; 
+    	margin-top: 5%;
+    }
+
+    #loginDiv{
+    	flex: 1;
+    }
+
+    button{
+    	background-color: #70C7A9;
+    	color: white;
+    	font-family: 'Helvetica', 'sans-serif';
+    	font-size: 22px;
+    	margin-top: 50%;
+    	margin-left: 25%;
+    }
+
+
+@media (max-width: 1000px) {
+	body{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #headDiv{
+    	flex: 2;
+    }
+
+    #head{
+    	margin-left: 15vw; 
+    	margin-top: 20vh;
+    	margin-right: 5vw;
+    	font-size: 7.5em;
+    }
+
+    #subhead{
+    	font-size: 2.5em;
+    	margin-left: 15vw; 
+    	margin-top: 5%;
+    }
+
+    button{
+    	font-size: 2em;
+    	margin-top: 7vh;
+    	margin-left: 15vw;
+    }
+
+    img{
+    	width: 6vw;
+    	height: 5.5vh;
+    }
+}

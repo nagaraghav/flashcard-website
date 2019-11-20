@@ -1,0 +1,284 @@
+
+    body{
+        min-height: 100vh;
+        display: flex;
+
+
+    }
+
+    #headerBox{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        justify-content: flex-start;
+        align-content: stretch;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 75vw;
+        margin: 4%;
+        margin-bottom: 2%;
+
+    }
+
+    #startReview{
+        font-family: 'Helvetica', 'sans=serif';
+        font-size: 1.25em;
+        background-color: #606B9B;
+        color: white;
+        flex: 0 1 auto;
+        width: 180px;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    #logo{
+        margin-bottom: 3%;
+        flex: 1 1 auto;
+        font-family: 'Raleway Black', sans-serif;
+        font-size: 6vw;
+        color: #606B9B;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    div.cards{
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.textCard{
+
+
+      flex: 1;
+      margin: 20px;
+      margin-left: 5vw;
+      height: 55vh;
+      width: 40vw;
+      border-style: solid;
+      border: 1ch;
+      border-width: 5px;
+      border-color: black;
+
+    }
+
+
+    textarea.textAreas{
+
+      display: inline-block;
+      margin-left: 9vw;
+      border-style: solid;
+      border-width: 0.5mm;
+      border-color: gray;
+      width: 30vw;
+      height: 30vh;
+      text-align: center;
+      vertical-align: text-bottom;
+      font-family: 'Helvetica';
+      font-size: 1.5em;
+      padding-top: 200px;
+    }
+
+
+    #savebutton{
+        color: white;
+        background-color: #70C7A9;
+        font-family: 'Helvetica';
+        font-size: 1.25em;
+        width: 110px;
+        height: 40px;
+        border-radius: 15px;
+        margin-left: 85%;
+    }
+
+    div.footer{
+        background-color: #606B9B;
+        color: white;
+        font-family: 'Helvetica';
+        font-size: 1.25em;
+        text-align: center;
+        width: 100vw;
+        margin-top: 6%;
+        padding-top: 14px;
+        min-height: 38px;
+        position: fixed;
+        bottom: 0;
+    }
+
+
+
+
+@media (max-width: 1000px) {
+
+
+    div.cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.textCard{
+
+
+      flex: 1;
+      padding: 0px;
+      margin-bottom: : 10px;
+
+      height: 15vh;
+      width: 80vw;
+      border-style: solid;
+      border: 1ch;
+      border-width: 5px;
+      border-color: black;
+
+    }
+
+
+    textarea.textAreas{
+
+
+      padding: 0px;
+      display: inline-block;
+      margin-left: 9vw;
+      border-style: solid;
+      border-width: 0.5mm;
+      border-color: gray;
+      height: 15vh;
+      width: 80vw;
+      text-align: center;
+      vertical-align: text-bottom;
+      font-family: 'Helvetica';
+      font-size: 1.5em;
+      padding-top: 150px;
+    }
+
+
+
+}
+
+/*- Typograpy and resets -*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+/*- Card container -*/
+.card-container {
+  position: relative;
+  z-index: 1;
+  margin: 32px auto;
+  max-width: 720px;
+  height: 420px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+/*- Card body -*/
+.card-body {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  transition: all .7s linear;
+}
+
+/*- Flipping the card -*/
+.card-container:hover .card-body {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-container:hover > .card-body > .side-front {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in, visibility .75s linear;
+}
+
+/*- Card sides -*/
+.card-side {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  color: #212121;
+  background-color: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-shadow: 0 10px 35px rgba(50, 50, 93, 0.1), 0 2px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/*- Back side -*/
+.side-back {
+  z-index: 2;
+  padding: 32px;
+  text-align: center;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+
+input,
+textarea {
+  padding: 8px;
+  width: 100%;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #eee;
+  border-left: 0;
+}
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-bottom: 1px solid #0c81f6;
+}
+
+textarea {
+  max-height: 80px;
+  resize: vertical;
+}
+
+.btn-primary {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #0c81f6;
+  border: none;
+  box-shadow: 0 10px 35px rgba(50, 50, 93, 0.1), 0 2px 15px rgba(0, 0, 0, 0.07);
+  transition: background-color .25s ease-in, box-shadow .25s ease-in;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  background-color: #56a7f9;
+  box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
+}
